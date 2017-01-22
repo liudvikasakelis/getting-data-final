@@ -2,7 +2,7 @@
 Coursera course - getting and cleaning data. The final assignment
 
 ### files 
-*script.R* - the main script that produces the tidy data set. For its input it expects to be run from within the UCI HAR dataset directory. Main functions:
+*run_analysis.R* - the main script that produces the tidy data set. For its input it expects to be run from within the UCI HAR dataset directory. Main functions:
 + merges the test and train sets of calculated features
 + adds column names to the merged set (column names = feature names)
 + adds a subject id column to identify the test subject that performed the activity 
@@ -10,9 +10,9 @@ Coursera course - getting and cleaning data. The final assignment
 + subsets the merged set to only contain the columns that contain either the standard deviations or the mean values of the calculated features
 + for each activity and individual, calculates the mean value for each of the columns present in the previous subsetted set. This new set is then output into *tidyset.txt*
 
-*quicklib.R* - a library for most of *script.R* functionality
+*quicklib.R* - a library for most of *run_analysis.R* functionality
 
-*tidyset.txt* - NOT PRESENT IN THE REPOSITORY the output of *script.R*, containing a tidy data set. For variable descriptions, see CodeBook.md
+*tidyset.txt* - NOT PRESENT IN THE REPOSITORY the output of *run_analysis.R*, containing a tidy data set. For variable descriptions, see CodeBook.md
 
 ### data set 
 
